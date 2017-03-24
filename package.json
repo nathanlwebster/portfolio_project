@@ -1,0 +1,34 @@
+{
+  "name": "portfolio_project",
+  "version": "1.0.0",
+  "description": "Udacity portfolio project",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-jshint": "^2.0.4",
+    "gulp-less": "^3.3.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-embedlr": "^0.5.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-src": "^1.0.0",
+    "gulp-concat": "^2.6.1",
+    "tiny-lr": "^1.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathanlwebster/portfolio_project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nathanlwebster/portfolio_project/issues"
+  },
+  "homepage": "https://github.com/nathanlwebster/portfolio_project#readme"
+}

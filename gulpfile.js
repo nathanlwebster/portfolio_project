@@ -3,11 +3,11 @@ var gulp = require('gulp'),
     // sass = require('gulp-sass'),
     // coffee = require('gulp-coffee'),
     connect = require('gulp-connect'),
-    uglify = require('gulp-uglify'),
+    // uglify = require('gulp-uglify'),
     concat = require('gulp-concat');
 
 var jsSources = ['scripts/*.js'],
-    cssSources = ['styles/*.scss'],
+    cssSources = ['styles/*.css'],
     htmlSources = ['**/*.html'],
     outputDir = 'assets';
 
@@ -23,7 +23,7 @@ gulp.task('copy', function() {
 
 gulp.task('css', function() {
   gulp.src(cssSources)
-  .pipe(uglify())
+//   .pipe(uglify())
   .pipe(concat('style.css'))
   .pipe(gulp.dest(outputDir))
   .pipe(connect.reload())
@@ -31,7 +31,7 @@ gulp.task('css', function() {
 
 gulp.task('js', function() {
   gulp.src(jsSources)
-  .pipe(uglify())
+//   .pipe(uglify())
   .pipe(concat('script.js'))
   .pipe(gulp.dest(outputDir))
   .pipe(connect.reload())

@@ -1,3 +1,5 @@
+//gulpfile source: https://semaphoreci.com/community/tutorials/getting-started-with-gulp-js
+
 var gulp = require('gulp'),
     gutil = require('gulp-util'),
     // sass = require('gulp-sass'),

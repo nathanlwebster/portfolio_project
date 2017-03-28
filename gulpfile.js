@@ -5,13 +5,18 @@ var gulp = require('gulp'),
     // sass = require('gulp-sass'),
     // coffee = require('gulp-coffee'),
     connect = require('gulp-connect'),
+    include = require('gulp-include'),
     // uglify = require('gulp-uglify'),
+    // jQuery = require('jQuery'),
+    // boostrap = require('bootstrap'),
     concat = require('gulp-concat');
 
 var jsSources = ['scripts/*.js'],
     cssSources = ['styles/*.css'],
     htmlSources = ['**/*.html'],
+    nodeCssSources = ['node_modules/**/*.css'],
     outputDir = 'assets';
+
 
 
 gulp.task('log', function() {
@@ -39,6 +44,20 @@ gulp.task('js', function() {
   .pipe(connect.reload())
 });
 
+gulp.task('nodeCss', function() {
+  gulp.src(nodeCssSources)
+  .pipe(include({
+    extensions: "css",
+    hardFail: true,
+    includePaths: [
+      __dirname + "/node_modules"
+    ]
+  }))
+//   .pipe(uglify())
+  .pipe(gulp.dest(outputDir))
+  .pipe(connect.reload())
+});
+
 gulp.task('watch', function() {
   gulp.watch(jsSources, ['js']);
   gulp.watch(cssSources, ['css']);
@@ -57,4 +76,4 @@ gulp.task('html', function() {
   .pipe(connect.reload())
 });
 
-gulp.task('default', ['html', 'js', 'css', 'connect', 'watch']);
+gulp.task('default', ['html', 'js', 'css', 'nodeCss', 'connect', 'watch']);

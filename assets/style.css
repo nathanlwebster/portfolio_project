@@ -1,3 +1,88 @@
+img, embed, object, video {
+  max-width: 100%;
+}
 h1 {
-    color: black;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase; 
+    color: #2d3c49;
+    font-size: 350%;
+    font-weight: 100;
+    margin: 20px 0 5px 0;
+}
+html {
+    max-width: 960px;
+    margin: 0px auto;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 960px;
+    max-width: auto;
+    margin: 0px auto;
+}
+
+.bannerPic {
+    width: 960px;
+    margin: 0px auto;
+}
+.work {
+    width: 960px;
+    margin: 0px auto;
+}
+.logo img {
+    margin-top: 30px;
+}
+.title > h3 {
+    font-family: 'Pavanam', sans-serif;
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 130%;
+    margin: 10px 0 10px 0;
+    letter-spacing: 1px;
+    font-weight: 150;
+}
+.work > h3 {
+    color: #7d97ad;
+    font-family: 'Pavanam', sans-serif;
+    font-size: 250%;
+    font-weight: 120;
+    letter-spacing: 4px;
+    margin-bottom: 5px;
+}
+.project > h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 250%;
+    font-weight: 500;
+    margin: 10px 0 5px 0;
+    letter-spacing: 2px;
+    color: #2d3c49;
+}
+.project > p {
+    text-align: center;
+    font-family: 'Pavanam', sans-serif;
+    margin: 0;
+}
+hr {
+    width: 960px;
+    background-color: #7d97ad;
+    height: 3px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .container > .project {
+        width: 600px;
+        height: 400px;
+        margin: 20px auto;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
 }

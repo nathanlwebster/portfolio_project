@@ -13,6 +13,13 @@ html {
     max-width: 960px;
     margin: 0px auto;
 }
+body {
+    margin: 0;
+}
+header {
+    padding: 10px;
+    max-width: 930px;
+}
 img {
     width: 100%;
     height: auto;
@@ -78,11 +85,26 @@ hr {
 
 @media screen and (max-width: 800px) {
     .container > .project {
-        width: 600px;
-        height: 400px;
         margin: 20px auto;
         display: flex;
         flex-wrap: wrap;
-
+        width: 500px;
     }
+    .container > .project > img {
+        width: 450px;
+        height: 300px;
+    }
+    .work > h3 {
+        text-align: center;
+    }
+    .project > h3 {
+        text-align: center;
+        width: 100%;
+    }
+    .project > p {
+        text-align: center;
+        width: 100%;
+    }
+
 }
+

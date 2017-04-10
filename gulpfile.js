@@ -11,8 +11,8 @@ var gulp = require('gulp'),
     // boostrap = require('bootstrap'),
     concat = require('gulp-concat');
 
-var jsSources = ['scripts/*.js'],
-    cssSources = ['styles/*.css'],
+var jsSources = ['js/*.js'],
+    cssSources = ['css/*.css'],
     htmlSources = ['**/*.html'],
     nodeCssSources = ['node_modules/**/*.css'],
     outputDir = 'assets';

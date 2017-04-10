@@ -1,65 +1,74 @@
 img, embed, object, video {
   max-width: 100%;
 }
-h1 {
-    font-family: 'Quicksand', sans-serif;
-    text-transform: uppercase; 
-    color: #2d3c49;
-    font-size: 350%;
-    font-weight: 100;
-    margin: 20px 0 5px 0;
-}
 html {
-    max-width: 960px;
+    max-width: 100%;
     margin: 0px auto;
-}
-body {
-    margin: 0;
-}
-header {
-    padding: 10px;
-    max-width: 930px;
+    width: 960px;
+    overflow-x: hidden;
 }
 img {
     width: 100%;
     height: auto;
+}
+a {
+    text-decoration: none;
+    color: #2d3c49;
 }
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 960px;
-    max-width: auto;
-    margin: 0px auto;
+    max-width: 100%;
 }
-
+header {
+    max-width: 960px;
+    margin: 0;
+    /*padding: 0 20px 0 20px;*/
+}
 .bannerPic {
     width: 960px;
+    max-width: 100%;
     margin: 0px auto;
 }
 .work {
     width: 960px;
+    max-width: 100%;
     margin: 0px auto;
 }
 .logo img {
     margin-top: 30px;
+    padding-left: 20px
+}
+.title > h1 {
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase; 
+    color: #2d3c49;
+    font-size: 350%;
+    font-weight: 100;
+    margin: 20px 18px 5px 0;
 }
 .title > h3 {
     font-family: 'Pavanam', sans-serif;
     text-transform: uppercase;
     text-align: right;
     font-size: 130%;
-    margin: 10px 0 10px 0;
+    margin: 10px 20px 10px 0;
     letter-spacing: 1px;
     font-weight: 150;
 }
 .work > h3 {
     color: #7d97ad;
-    font-family: 'Pavanam', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 250%;
-    font-weight: 120;
-    letter-spacing: 4px;
+    font-weight: 100;
     margin-bottom: 5px;
+    padding: 0 0 10px 20px;
+}
+.project > img {
+    width: 100%;
+    margin: 0 auto;
 }
 .project > h3 {
     text-align: center;
@@ -77,25 +86,30 @@ img {
     margin: 0;
 }
 hr {
-    width: 960px;
+    max-width: 960px;
+    width: 100%;
     background-color: #7d97ad;
     height: 3px;
 }
 
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 910px) {
     .container > .project {
         margin: 20px auto;
         display: flex;
         flex-wrap: wrap;
         width: 500px;
     }
+    .logo > img {
+        padding-left: 25px;
+    }
     .container > .project > img {
         width: 450px;
         height: 300px;
+        margin: 0 auto;
     }
     .work > h3 {
         text-align: center;
+        padding: 0;
     }
     .project > h3 {
         text-align: center;
@@ -106,5 +120,18 @@ hr {
         width: 100%;
     }
 
+}
+
+@media screen and (max-width: 600px) {
+    .logo > img {
+        width: 50px;
+        height: auto;
+    }
+    .title > h1 {
+        font-size: 250%;
+    }
+    .title > h3 {
+        font-size: 130%;
+    }
 }
 
